@@ -113,16 +113,25 @@
         };
     };
 
+    macros {
+        cn_lan: cn_lan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "CN_LAN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q                &kp W        &kp E        &kp R         &kp T                      &none         &kp Y       &kp U         &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
-&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D  &HML LSHFT F  &kp G               &none  &none  &none  &kp H       &HMR LSHFT J  &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
-&kp CLCK    &kp Z                &kp X        &kp C        &kp V         &kp B      &none           &none         &kp N       &kp M         &kp COMMA    &kp DOT      &kp FSLH                &kp CLCK
-                                              &lt 2 F13    &lt 1 SPACE   &kp ENTER                                &bcspc_del  &lt 3 SPACE   &mo 4
+&Esc_tilda  &kp Q                &kp W        &kp E            &kp R         &kp T                      &none         &kp Y       &kp U         &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
+&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D      &HML LSHFT F  &kp G               &none  &none  &none  &kp H       &HMR LSHFT J  &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
+&kp CLCK    &kp Z                &kp X        &kp C            &kp V         &kp B      &none           &none         &kp N       &kp M         &kp COMMA    &kp DOT      &kp FSLH                &kp CLCK
+                                              &lt 2 LC(SPACE)  &lt 1 SPACE   &kp ENTER                                &bcspc_del  &lt 3 SPACE   &mo 4
             >;
         };
 
