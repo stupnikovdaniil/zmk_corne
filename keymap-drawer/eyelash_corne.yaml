@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - CLCK
-  - {t: F13, h: mouse}
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: mouse}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
