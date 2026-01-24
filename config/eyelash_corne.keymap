@@ -88,6 +88,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        custom_lt: custom_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CUSTOM_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -128,20 +139,20 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q                &kp W        &kp E            &kp R         &kp T                      &none         &kp Y       &kp U         &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
-&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D      &HML LSHFT F  &kp G               &none  &none  &none  &kp H       &HMR LSHFT J  &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
-&mo 1       &kp Z                &kp X        &kp C            &kp V         &kp B      &none           &none         &kp N       &kp M         &kp COMMA    &kp DOT      &kp FSLH                &mo 1
-                                              &lt 3 LC(SPACE)  &lt 2 SPACE   &kp ENTER                                &bcspc_del  &lt 4 SPACE   &mo 5
+&Esc_tilda  &kp Q                &kp W        &kp E                   &kp R               &kp T                      &none         &kp Y       &kp U               &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
+&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D             &HML LSHFT F        &kp G               &none  &none  &none  &kp H       &HMR LSHFT J        &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
+&mo 1       &kp Z                &kp X        &kp C                   &kp V               &kp B      &none           &none         &kp N       &kp M               &kp COMMA    &kp DOT      &kp FSLH                &mo 1
+                                              &custom_lt 3 LC(SPACE)  &custom_lt 2 SPACE  &kp ENTER                                &bcspc_del  &custom_lt 4 SPACE  &mo 5
             >;
         };
 
         no_hm {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q  &kp W  &kp E            &kp R        &kp T                      &none         &kp Y       &kp U        &kp I      &kp O    &kp P             &kp LEFT_BRACKET
-&kp TAB     &kp A  &kp S  &kp D            &kp F        &kp G               &none  &none  &none  &kp H       &kp J        &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
-&kp CLCK    &kp Z  &kp X  &kp C            &kp V        &kp B      &none           &none         &kp N       &kp M        &kp COMMA  &kp DOT  &kp FSLH          &kp CLCK
-                          &lt 3 LC(SPACE)  &lt 2 SPACE  &kp ENTER                                &bcspc_del  &lt 4 SPACE  &mo 5
+&Esc_tilda  &kp Q  &kp W  &kp E                   &kp R               &kp T                      &none         &kp Y       &kp U               &kp I      &kp O    &kp P             &kp LEFT_BRACKET
+&kp TAB     &kp A  &kp S  &kp D                   &kp F               &kp G               &none  &none  &none  &kp H       &kp J               &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
+&kp CLCK    &kp Z  &kp X  &kp C                   &kp V               &kp B      &none           &none         &kp N       &kp M               &kp COMMA  &kp DOT  &kp FSLH          &kp CLCK
+                          &custom_lt 3 LC(SPACE)  &custom_lt 2 SPACE  &kp ENTER                                &bcspc_del  &custom_lt 4 SPACE  &mo 5
             >;
         };
 
