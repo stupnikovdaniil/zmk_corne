@@ -15,21 +15,21 @@ layers:
   - P
   - {t: '[', s: '{'}
   - $$mdi:keyboard-tab$$
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
+  - S
+  - D
+  - F
   - G
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: LGUI}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - J
+  - K
+  - L
+  - $$mdi:apple-keyboard-control$$
   - {t: '''', s: '"'}
-  - CLCK
+  - {t: CLCK, type: held}
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - CLCK
+  - {t: CLCK, type: held alternate}
   - {t: 'Ctl+$$mdi:keyboard-space$$', h: mouse}
   - {t: '$$mdi:keyboard-space$$', h: arrow}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -64,10 +64,10 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -78,6 +78,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -90,8 +91,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -127,7 +127,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -140,7 +140,7 @@ layers:
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -176,7 +176,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - F1
+  - {t: F1, type: held alternate}
   - F2
   - F3
   - F4
@@ -189,7 +189,7 @@ layers:
   - F9
   - F10
   - F11
-  - F12
+  - {t: F12, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -225,6 +225,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -237,8 +238,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
