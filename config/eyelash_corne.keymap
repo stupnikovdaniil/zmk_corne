@@ -74,7 +74,7 @@
         Esc_tilda: Esc_tilda {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_TILDA";
-            bindings = <&kp ESCAPE>, <&kp GRAVE>;
+            bindings = <&kp ESCAPE>, <&kp LS(GRAVE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -178,9 +178,9 @@
 
         arrow {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                         &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL        &kp RIGHT_BRACKET  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                 &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans             &trans
-&trans  &trans            &trans        &trans        &trans          &trans       &trans            &trans          &trans            &trans             &trans        &trans           &trans             &trans
+&trans  &trans            &trans        &trans        &trans          &trans                         &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL        &kp RIGHT_BRACKET     &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                 &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans                &trans
+&trans  &trans            &trans        &trans        &trans          &trans       &trans            &trans          &trans            &trans             &trans        &trans           &kp NON_US_BACKSLASH  &trans
                                         &trans        &kp SPACE       &enter_back                                    &bcspc_del        &kp SPACE          &trans
             >;
         };
