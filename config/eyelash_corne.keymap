@@ -74,7 +74,7 @@
         Esc_tilda: Esc_tilda {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_TILDA";
-            bindings = <&kp ESCAPE>, <&kp TILDE2>;
+            bindings = <&kp ESCAPE>, <&kp GRAVE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -159,20 +159,20 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q                &kp W        &kp E                   &kp R               &kp T                              &none         &kp Y       &kp U               &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
-&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D             &HML LSHFT F        &kp G                       &none  &none  &none  &kp H       &HMR LSHFT J        &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
-&mo 1       &kp Z                &kp X        &kp C                   &kp V               &kp B              &none           &none         &kp N       &kp M               &kp COMMA    &kp DOT      &kp FSLH                &mo 1
-                                              &custom_lt 3 LC(SPACE)  &custom_lt 2 SPACE  &hold_ent_del 6 0                                &bcspc_del  &custom_lt 4 SPACE  &mo 5
+&Esc_tilda  &kp Q                &kp W        &kp E                   &kp R               &kp T                      &none         &kp Y       &kp U               &kp I        &kp O        &kp P                   &kp LEFT_BRACKET
+&kp TAB     &HML LEFT_CONTROL A  &HML LALT S  &HML LCMD D             &HML LSHFT F        &kp G               &none  &none  &none  &kp H       &HMR LSHFT J        &HMR LGUI K  &HMR LALT L  &HMR LEFT_CONTROL SEMI  &kp SQT
+&mo 1       &kp Z                &kp X        &kp C                   &kp V               &kp B      &none           &none         &kp N       &kp M               &kp COMMA    &kp DOT      &kp FSLH                &mo 1
+                                              &custom_lt 3 LC(SPACE)  &custom_lt 2 SPACE  &kp ENTER                                &bcspc_del  &custom_lt 4 SPACE  &mo 5
             >;
         };
 
         no_hm {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q  &kp W  &kp E                   &kp R      &kp T                        &none         &kp Y       &kp U      &kp I      &kp O    &kp P             &kp LEFT_BRACKET
-&kp TAB     &kp A  &kp S  &kp D                   &kp F      &kp G                 &none  &none  &none  &kp H       &kp J      &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
-&trans      &kp Z  &kp X  &kp C                   &kp V      &kp B        &none           &none         &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH          &trans
-                          &custom_lt 3 LC(SPACE)  &kp SPACE  &enter_back                                &bcspc_del  &kp SPACE  &mo 5
+&Esc_tilda  &kp Q  &kp W  &kp E                   &kp R      &kp T                      &none         &kp Y       &kp U      &kp I      &kp O    &kp P             &kp LEFT_BRACKET
+&kp TAB     &kp A  &kp S  &kp D                   &kp F      &kp G               &none  &none  &none  &kp H       &kp J      &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
+&trans      &kp Z  &kp X  &kp C                   &kp V      &kp B      &none           &none         &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH          &trans
+                          &custom_lt 3 LC(SPACE)  &kp SPACE  &kp ENTER                                &bcspc_del  &kp SPACE  &mo 5
             >;
         };
 
@@ -209,15 +209,6 @@
 &trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4            &trans  &trans  &trans  &trans      &trans          &trans  &trans  &trans  &trans
 &trans  &trans         &trans         &trans         &trans         &trans         &trans            &trans          &trans      &trans          &trans  &trans  &trans  &trans
                                       &trans         &bt BT_PRV     &bt BT_NXT                                       &bt BT_CLR  &bt BT_CLR_ALL  &trans
-            >;
-        };
-
-        symbols {
-            bindings = <
-&kp TILDE  &kp GRAVE  &kp AT             &kp HASH        &kp DOLLAR       &kp PERCENT                    &trans          &kp CARET   &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR   &kp EQUAL
-&trans     &kp LT     &kp GREATER_THAN   &kp EXCL        &kp QUESTION     &trans                 &trans  &trans  &trans  &kp SQT     &kp DOT    &kp COMMA     &kp SEMI  &kp COLON  &kp DQT
-&trans     &kp LBKT   &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans       &trans            &trans          &kp PLUS    &kp MINUS  &kp UNDER     &kp BSLH  &kp PIPE   &kp SLASH
-                                         &trans          &kp SPACE        &enter_back                                    &bcspc_del  &kp SPACE  &trans
             >;
         };
     };
