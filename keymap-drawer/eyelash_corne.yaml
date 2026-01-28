@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - {t: '$$mdi:keyboard-esc$$', s: '~'}
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - Q
   - W
   - E
@@ -45,7 +45,7 @@ layers:
   - {type: held alternate}
   - {t: 'Ctl+$$mdi:keyboard-space$$', h: mouse}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', s: '$$mdi:backspace$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-space$$
   - BT
@@ -245,55 +245,6 @@ layers:
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {type: held}
-  symbols:
-  - '~'
-  - {t: '`', s: '~'}
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '=', s: +}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - '>'
-  - '!'
-  - '?'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
-  - {t: ., s: '>'}
-  - {t: ',', s: <}
-  - {t: ;, s: ':'}
-  - ':'
-  - '"'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - '{'
-  - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - +
-  - {t: '-', s: _}
-  - _
-  - {t: \, s: '|'}
-  - '|'
-  - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', s: '$$mdi:backspace$$', type: held}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
