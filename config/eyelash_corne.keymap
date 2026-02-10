@@ -118,6 +118,15 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
+
+        scroll_med_fast: scroll_med_fast {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SCROLL_MED_FAST";
+            bindings = <&msc MOVE_Y(10)>, <&msc MOVE_Y(20)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     scroll_encoder: scroll_encoder {
@@ -180,9 +189,9 @@
 
         mouse {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp PAGE_UP     &msc SCRL_DOWN  &msc SCRL_LEFT   &trans           &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &trans           &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp PAGE_UP     &msc SCRL_DOWN  &msc SCRL_LEFT   &trans            &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT   &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &scroll_med_fast  &trans  &trans
                                         &trans        &trans          &trans                                    &kp INS         &mkp LCLK       &mkp RCLK
             >;
         };
