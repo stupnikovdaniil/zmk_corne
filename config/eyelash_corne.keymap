@@ -12,6 +12,34 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
+&msc_input_listener {
+    input-processors = <&scroll_normal>;
+};
+
+/* ================= SCROLL PROCESSORS ================= */
+
+ / {
+    input_processors {
+        scroll_normal: scroll_normal {
+            compatible = "zmk,input-processor-zip-scroll-scaler";
+            scale = <2>;
+            divisor = <1>;
+        };
+
+        scroll_medium: scroll_medium {
+            compatible = "zmk,input-processor-zip-scroll-scaler";
+            scale = <4>;
+            divisor = <1>;
+        };
+
+        scroll_fast: scroll_fast {
+            compatible = "zmk,input-processor-zip-scroll-scaler";
+            scale = <7>;
+            divisor = <1>;
+        };
+    };
+};
+
 &msc {
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <100>;       // 300
@@ -28,6 +56,32 @@
 
 / {
     behaviors {
+        /* --- scroll speed modifiers --- */
+
+        scroll_medium_shift: scroll_medium_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+
+            bindings = <
+                &kp LEFT_SHIFT
+                &input_proc_toggle &scroll_medium
+            >;
+        };
+
+        scroll_fast_gui: scroll_fast_gui {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+
+            bindings = <
+                &kp LEFT_GUI
+                &input_proc_toggle &scroll_fast
+            >;
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -180,10 +234,9 @@
 
         mouse {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp PAGE_UP     &msc SCRL_DOWN  &msc SCRL_LEFT   &trans           &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &trans           &trans  &trans
-                                        &trans        &trans          &trans                                    &kp INS         &mkp LCLK       &mkp RCLK
+&trans  &trans  &trans  &trans  &trans  &trans          &trans   &kp PAGE_UP     &msc SCRL_DOWN   &msc SCRL_LEFT   &trans  &trans  &trans
+&trans  &kp LCTL &kp LALT &scroll_fast_gui &scroll_medium_shift &trans  &trans  &trans  &trans  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans   &kp PAGE_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &trans  &trans  &trans
             >;
         };
 
