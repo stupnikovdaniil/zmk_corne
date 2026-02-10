@@ -138,7 +138,7 @@ layers:
   - PgDn
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&msc MOVE_Y(10)', s: '&msc MOVE_Y(20)'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {type: held}
