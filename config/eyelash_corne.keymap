@@ -189,28 +189,28 @@
 
         arrow {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                        &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL        &kp RIGHT_BRACKET     &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans                &trans
-&trans  &trans            &trans        &trans        &trans          &trans      &trans            &trans          &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans           &kp NON_US_BACKSLASH  &trans
-                                        &trans        &kp SPACE       &bcspc_del                                    &bcspc_del        &kp SPACE          &trans
+&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL        &kp RIGHT_BRACKET     &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans                &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans           &kp NON_US_BACKSLASH  &trans
+                                        &trans        &trans          &trans                                    &bcspc_del        &kp SPACE          &trans
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp PAGE_UP     &msc SCRL_DOWN  &msc SCRL_LEFT   &trans           &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp PAGE_UP     &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans           &trans  &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &trans           &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &trans           &trans  &trans
                                         &trans        &trans          &trans                                    &kp INS         &mkp LCLK       &mkp RCLK
             >;
         };
 
         numbers {
             bindings = <
-&kp F13  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                        &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp F18
-&kp F14  &kp LEFT_CONTROL  &kp LALT      &kp LEFT_GUI  &kp LSHFT     &kp F15               &trans  &trans  &trans  &kp F16       &kp LSHFT     &kp LGUI      &kp LALT      &kp LCTRL     &kp F17
-&kp F1   &kp F2            &kp F3        &kp F4        &kp F5        &kp F6      &trans            &trans          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-                                         &trans        &kp SPACE     &bcspc_del                                    &bcspc_del    &kp SPACE     &trans
+&trans  &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                        &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp LEFT_CONTROL  &kp LALT      &kp LEFT_GUI  &kp LSHFT     &trans                &trans  &trans  &trans  &trans        &kp LSHFT     &kp LGUI      &kp LALT      &kp LCTRL     &trans
+&kp F1  &kp F2            &kp F3        &kp F4        &kp F5        &kp F6      &trans            &trans          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+                                        &trans        &kp SPACE     &bcspc_del                                    &trans        &trans        &trans
             >;
         };
 
