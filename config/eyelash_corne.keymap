@@ -189,10 +189,10 @@
 
         arrow {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL        &kp RIGHT_BRACKET     &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans                &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans        &trans           &kp NON_US_BACKSLASH  &trans
-                                        &trans        &trans          &trans                                    &bcspc_del        &kp SPACE          &trans
+&trans  &trans            &trans        &trans            &trans             &trans                    &trans          &trans          &trans          &kp MINUS        &kp EQUAL        &kp RIGHT_BRACKET  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI      &kp LEFT_SHIFT     &trans            &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans             &trans
+&trans  &trans            &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans            &trans          &trans          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans           &kp BACKSLASH      &trans
+                                        &trans            &trans             &trans                                    &bcspc_del      &kp SPACE       &trans
             >;
         };
 
