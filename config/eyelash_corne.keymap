@@ -180,16 +180,16 @@
         no_hm {
             display-name = "QWERTY";
             bindings = <
-&Esc_tilda  &kp Q  &kp W  &kp E                   &kp R      &kp T                      &none         &kp Y       &kp U      &kp I      &kp O    &kp P             &kp LEFT_BRACKET
-&kp TAB     &kp A  &kp S  &kp D                   &kp F      &kp G               &none  &none  &none  &kp H       &kp J      &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
-&kp CLCK    &kp Z  &kp X  &kp C                   &kp V      &kp B      &none           &none         &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH          &kp CLCK
-                          &custom_lt 3 LC(SPACE)  &kp SPACE  &kp ENTER                                &bcspc_del  &kp SPACE  &mo 5
+&Esc_tilda    &kp Q  &kp W  &kp E                   &kp R      &kp T                      &none         &kp Y       &kp U      &kp I      &kp O    &kp P             &kp LEFT_BRACKET
+&kp TAB       &kp A  &kp S  &kp D                   &kp F      &kp G               &none  &none  &none  &kp H       &kp J      &kp K      &kp L    &kp LEFT_CONTROL  &kp SQT
+&kp CAPSLOCK  &kp Z  &kp X  &kp C                   &kp V      &kp B      &none           &none         &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH          &kp CAPSLOCK
+                            &custom_lt 3 LC(SPACE)  &kp SPACE  &kp ENTER                                &bcspc_del  &kp SPACE  &mo 5
             >;
         };
 
         arrow {
             bindings = <
-&trans  &trans            &trans        &trans            &trans             &trans                    &trans          &trans          &trans          &kp MINUS        &kp EQUAL        &kp RIGHT_BRACKET  &trans
+&trans  &trans            &trans        &trans            &trans             &trans                    &trans          &trans          &kp PLUS        &kp MINUS        &kp EQUAL        &kp RIGHT_BRACKET  &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI      &kp LEFT_SHIFT     &trans            &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW  &trans             &trans
 &trans  &trans            &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans            &trans          &trans          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans           &kp BACKSLASH      &trans
                                         &trans            &trans             &trans                                    &bcspc_del      &kp SPACE       &trans
