@@ -3,6 +3,7 @@ name: Eyelash Corne
 url: https://github.com/a741725193/zmk-new_corne
 type: mcu
 arch: arm
+qualifiers: []
 toolchain:
   - zephyr
   - gnuarmemb
