@@ -7,6 +7,10 @@
 
 #include "eyelash_corne.dtsi"
 
+/ {
+    compatible = "zmk,keyboard";
+};
+
 &default_transform {
     col-offset = <7>;
 };
