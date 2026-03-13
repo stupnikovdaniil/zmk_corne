@@ -7,6 +7,10 @@
 
 #include "eyelash_corne.dtsi"
 
+/ {
+    compatible = "zmk,keyboard";
+};
+
 &left_encoder {
     status = "okay";
 };
