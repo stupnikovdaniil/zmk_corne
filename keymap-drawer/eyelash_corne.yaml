@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - N
   - {t: '$$mdi:keyboard-space$$', h: numbers}
   - {t: '$$mdi:keyboard-return$$', type: enter}
