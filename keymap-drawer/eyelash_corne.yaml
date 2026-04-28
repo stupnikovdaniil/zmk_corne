@@ -29,12 +29,12 @@ layers:
   - L
   - $$mdi:apple-keyboard-control$$
   - {t: '''', s: '"'}
-  - {t: '$$mdi:apple-keyboard-control$$', type: held}
-  - Z
+  - {t: Z, type: held}
   - X
   - C
   - V
   - B
+  - N
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - N
@@ -43,9 +43,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - N
-  - {t: '$$mdi:keyboard-space$$', h: numbers}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: numbers}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-space$$
   - BT
