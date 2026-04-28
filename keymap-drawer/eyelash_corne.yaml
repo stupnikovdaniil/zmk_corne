@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: QWERTY, h: toggle}
   - N
   - {t: '$$mdi:keyboard-space$$', h: numbers}
   - {t: '$$mdi:keyboard-return$$', type: enter}
