@@ -224,7 +224,7 @@
             bindings = <
 &trans  &trans            &trans        &trans        &trans          &trans                    &trans          &trans          &kp PG_UP                        &kp PG_DN                     &trans           &trans  &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN                   &mmv MOVE_UP                  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &trans          &scroll_ht MOVE_Y(-5) SCRL_DOWN  &scroll_ht MOVE_Y(5) SCRL_UP  &trans           &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &trans          &scroll_ht MOVE_Y(-8) SCRL_DOWN  &scroll_ht MOVE_Y(8) SCRL_UP  &trans           &trans  &trans
                                         &trans        &trans          &trans                                    &kp INS         &mkp LCLK                        &mkp RCLK
             >;
         };
