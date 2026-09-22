@@ -150,22 +150,15 @@
             hold-trigger-on-release;
         };
 
-        scroll_up_td: scroll_up_td {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&msc MOVE_Y(15)>, <&msc SCRL_UP>;
+        scroll_ht: scroll_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCROLL_HT";
+            bindings = <&msc>, <&msc>;
 
-            label = "SCROLL_UP_TD";
-        };
-
-        scroll_down_td: scroll_down_td {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-15)>, <&msc SCRL_DOWN>;
-
-            label = "SCROLL_DOWN_TD";
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            quick-tap-ms = <200>;
+            hold-while-undecided;
         };
     };
 
@@ -228,10 +221,10 @@
 
         mouse {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &trans          &kp PG_UP        &kp PG_DN      &trans           &trans  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &trans          &scroll_down_td  &scroll_up_td  &trans           &trans  &trans
-                                        &trans        &trans          &trans                                    &kp INS         &mkp LCLK        &mkp RCLK
+&trans  &trans            &trans        &trans        &trans          &trans                    &trans          &trans          &kp PG_UP                         &kp PG_DN                      &trans           &trans  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN                    &mmv MOVE_UP                   &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans            &trans        &trans        &trans          &trans  &trans            &trans          &trans          &scroll_ht MOVE_Y(-10) SCRL_DOWN  &scroll_ht MOVE_Y(15) SCRL_UP  &trans           &trans  &trans
+                                        &trans        &trans          &trans                                    &kp INS         &mkp LCLK                         &mkp RCLK
             >;
         };
 
