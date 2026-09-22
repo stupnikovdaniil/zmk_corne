@@ -185,8 +185,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&scroll_down_td'
-  - '&scroll_up_td'
+  - {t: '$$mdi:pan-down$$', h: '&msc MOVE_Y(-10)'}
+  - {t: '$$mdi:pan-up$$', h: '&msc MOVE_Y(15)'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
